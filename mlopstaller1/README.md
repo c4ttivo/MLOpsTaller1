@@ -1,4 +1,4 @@
-![alt text](https://github.com/c4ttivo/MLOpsTaller1/mlopstaller1/imgs/main/logo.png?raw=true)
+![alt text](https://github.com/c4ttivo/MLOpsTaller1/blob/main/mlopstaller1/imgs/logo.png?raw=true)
 
 # MLOps - Taller 1: Nivel 0
 ## Autores
@@ -33,7 +33,7 @@ Ahora es necesario construir el contenedor
 En este paso se descarga la imagen de acuerdo con lo especificado en el archivo Dockerfile.
 
 
-![alt text](https://github.com/c4ttivo/MLOpsTaller1/mlopstaller1/imgs/main/console.png?raw=true)
+![alt text](https://github.com/c4ttivo/MLOpsTaller1/blob/main/mlopstaller1/imgs/console.png?raw=true)
 
 Una vez finalizado la creación de la imagen, se procede a levantar la instancia del contenedor con el siguiente comando
 
@@ -44,7 +44,7 @@ Una vez finalizado la creación de la imagen, se procede a levantar la instancia
 
 Al levantarse la instancia, ahora es posible consumir los servicios expuestos en la URL http://127.0.0.1/docs#/
 
-![alt text](https://github.com/c4ttivo/MLOpsTaller1/mlopstaller1/imgs/main/fastapi.png?raw=true)
+![alt text](https://github.com/c4ttivo/MLOpsTaller1/blob/main/mlopstaller1/imgs/fastapi.png?raw=true)
 
 api predictions
 
