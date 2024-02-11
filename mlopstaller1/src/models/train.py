@@ -12,6 +12,7 @@ COLUMS_TO_USE =  ["Species","Culmen Length (mm)",
                   "Culmen Depth (mm)","Flipper Length (mm)",
                   "Body Mass (g)","Sex", "Delta 15 N (o/oo)",
                   "Delta 13 C (o/oo)"]
+
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 def train():
   print(print(os.getcwd()))
@@ -20,11 +21,11 @@ def train():
   data.dropna(inplace=True)
   label_encoder = LabelEncoder()
   sex_encoder = LabelEncoder()
-  data['Sex'] = sex_encoder.fit_transform(data['Sex'])
-  data['Species'] = label_encoder.fit_transform(data['Species'])
+  data['Sex'] = sex_encoder.fit_transform(data[['Sex']].values)
+  data['Species'] = label_encoder.fit_transform(data[['Species']].values)
 
-  X = data.drop('Species', axis=1)
-  y = data['Species']
+  X = data.drop('Species', axis=1).values
+  y = data['Species'].values
 
   X_train, X_test, y_train, y_test = train_test_split(X, y, test_size= 0.2, random_state=42)
 
@@ -59,10 +60,10 @@ def train():
   print(report_GB)
   print("_______________________________________________________________________________\n")
   
-  joblib.dump(sex_encoder, 'sex_encoder.joblib')
-  joblib.dump(label_encoder, 'label_encoder.joblib')
-  joblib.dump(pipeline_GB, 'gradient_boosting_model.joblib')
-  joblib.dump(pipeline_RF, 'random_forest_model.joblib')
+  joblib.dump(sex_encoder, '../../models/sex_encoder.joblib')
+  joblib.dump(label_encoder, '../../models/label_encoder.joblib')
+  joblib.dump(pipeline_GB, '../../models/gradient_boosting_model.joblib')
+  joblib.dump(pipeline_RF, '../../models/random_forest_model.joblib')
   
 if __name__ == "__main__":
   train()
