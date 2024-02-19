@@ -25,7 +25,7 @@ docker-compose up -d
 ```
 ### 3. Acceder a Jupyter Lab
 Abre tu navegador web y navega a  **_ http://localhost:8888._** 
-Utiliza el token de acceso proporcionado en la terminal para iniciar sesión en Jupyter Lab.
+Utiliza el token de acceso proporcionado en la terminal para iniciar sesión en Jupyter LAB.
 
 
 
