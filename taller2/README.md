@@ -15,5 +15,5 @@ Este proyecto demuestra cómo implementar un sistema de Machine Learning utiliza
 1. **Clonar el Repositorio:**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-proyecto.git
-   cd tu-proyecto
+   git clone https://github.com/c4ttivo/MLOpsTaller1/tree/main/taller2
+   cd taler2
